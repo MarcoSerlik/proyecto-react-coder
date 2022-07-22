@@ -1,5 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from '../cartwidget/CartWidget';
 
 const Navbar = () => {
   return (
@@ -11,6 +12,7 @@ const Navbar = () => {
       </button>
       <div className="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
         <ul className="navbar-nav ">
+        
           <li className="nav-item">
             <a className="nav-link active text-light" aria-current="page" href="#">Home</a>
           </li>
@@ -18,9 +20,9 @@ const Navbar = () => {
             <a className="nav-link text-light" href="#">Productos</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-light" href="#">Carrito</a>
+            <CartWidget/>
           </li>
-         
+        
         </ul>
       </div>
     </div>
